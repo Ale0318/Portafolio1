@@ -10,12 +10,10 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Fondo general */
 .stApp {
     background: linear-gradient(135deg, #f3d9ff, #d0ebff);
 }
 
-/* Elimina espacios gigantes */
 .main {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -27,7 +25,6 @@ st.markdown("""
     max-width: 95%;
 }
 
-/* Título */
 .titulo {
     text-align: center;
     font-size: 70px;
@@ -36,7 +33,6 @@ st.markdown("""
     margin-bottom: 10px;
 }
 
-/* Subtítulo */
 .subtitulo {
     text-align: center;
     font-size: 22px;
@@ -44,7 +40,6 @@ st.markdown("""
     margin-bottom: 50px;
 }
 
-/* Tarjetas */
 .card {
     background-color: rgba(255,255,255,0.65);
     padding: 30px;
@@ -53,7 +48,6 @@ st.markdown("""
     min-height: 480px;
 }
 
-/* Títulos de clases */
 .card-title {
     font-size: 26px;
     font-weight: bold;
@@ -61,14 +55,12 @@ st.markdown("""
     margin-bottom: 20px;
 }
 
-/* Descripción */
 .card-text {
     font-size: 17px;
     color: #311b5b;
     margin-bottom: 25px;
 }
 
-/* Botones */
 .link-btn {
     display: block;
     text-align: center;
@@ -88,7 +80,6 @@ st.markdown("""
     background: linear-gradient(90deg, #7b2cbf, #9d4edd);
 }
 
-/* Footer */
 .footer {
     text-align: center;
     margin-top: 35px;
@@ -113,7 +104,6 @@ Sobrevivimos a Streamlit, OCR, NLP y crisis emocionales con GitHub.
 </div>
 """, unsafe_allow_html=True)
 
-# COLUMNAS
 col1, col2, col3, col4 = st.columns(4)
 
 # CLASE 6
@@ -125,13 +115,14 @@ with col1:
         Primer contacto con Streamlit. Mucho café y errores existenciales.
         </div>
 
-        <a class='link-btn' href='https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/" target="_blank">
         🚀 Introducción
         </a>
 
-        <a class='link-btn' href='https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/" target="_blank">
         🔊 Texto a Audio
         </a>
+
     </div>
     """, unsafe_allow_html=True)
 
@@ -144,17 +135,18 @@ with col2:
         OCR, traducción y magia tecnológica sospechosamente poderosa.
         </div>
 
-        <a class='link-btn' href='https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/" target="_blank">
         🌐 Traductor
         </a>
 
-        <a class='link-btn' href='https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/" target="_blank">
         🎧 OCR + Audio
         </a>
 
-        <a class='link-btn' href='https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/" target="_blank">
         📸 VisionScan OCR
         </a>
+
     </div>
     """, unsafe_allow_html=True)
 
@@ -167,21 +159,22 @@ with col3:
         NLP, sentimientos y análisis emocional. TextBlob leyendo traumas desde temprano.
         </div>
 
-        <a class='link-btn' href='https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/" target="_blank">
         ☁️ WordCloud
         </a>
 
-        <a class='link-btn' href='https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/" target="_blank">
         📊 TF-IDF
         </a>
 
-        <a class='link-btn' href='https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/" target="_blank">
         💜 Sentimenta
         </a>
 
-        <a class='link-btn' href='https://dpaudyyodkunjmeg6rpcex.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/" target="_blank">
         🤖 NLP Dashboard
         </a>
+
     </div>
     """, unsafe_allow_html=True)
 
@@ -194,13 +187,14 @@ with col4:
         Computer Vision entrando como protagonista del semestre.
         </div>
 
-        <a class='link-btn' href='https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/" target="_blank">
         👁️ YOLOv5
         </a>
 
-        <a class='link-btn' href='https://yrhoftz8g3zqnca6elyu22.streamlit.app/' target='_blank'>
+        <a class="link-btn" href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/" target="_blank">
         📦 Object Detection
         </a>
+
     </div>
     """, unsafe_allow_html=True)
 
