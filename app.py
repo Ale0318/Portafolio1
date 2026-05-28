@@ -6,224 +6,207 @@ st.set_page_config(
     layout="wide"
 )
 
-portfolio_html = """
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-<meta charset="UTF-8">
-
+# CSS
+st.markdown("""
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+/* Fondo general */
+.stApp {
+    background: linear-gradient(135deg, #f3d9ff, #d0ebff);
 }
 
-body{
-    background: linear-gradient(135deg,#f8e8ff,#e0c3fc,#c2e9fb);
-    padding:40px;
-    color:#2d1b4e;
+/* Elimina espacios gigantes */
+.main {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
-h1{
-    text-align:center;
-    font-size:55px;
-    margin-bottom:10px;
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    max-width: 95%;
 }
 
-.subtitle{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:40px;
+/* Título */
+.titulo {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+    color: #2d1457;
+    margin-bottom: 10px;
 }
 
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
+/* Subtítulo */
+.subtitulo {
+    text-align: center;
+    font-size: 22px;
+    color: #2d1457;
+    margin-bottom: 50px;
 }
 
-.card{
-    background:rgba(255,255,255,0.75);
-    border-radius:25px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    transition:0.3s;
+/* Tarjetas */
+.card {
+    background-color: rgba(255,255,255,0.65);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    min-height: 480px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+/* Títulos de clases */
+.card-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #6a00ff;
+    margin-bottom: 20px;
 }
 
-.card h2{
-    color:#6a00f4;
-    margin-bottom:15px;
+/* Descripción */
+.card-text {
+    font-size: 17px;
+    color: #311b5b;
+    margin-bottom: 25px;
 }
 
-.card p{
-    margin-bottom:20px;
-    line-height:1.5;
+/* Botones */
+.link-btn {
+    display: block;
+    text-align: center;
+    background: linear-gradient(90deg, #9d4edd, #9747ff);
+    color: white !important;
+    padding: 14px;
+    border-radius: 16px;
+    margin-top: 14px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
+.link-btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #7b2cbf, #9d4edd);
 }
 
-.links a{
-    text-decoration:none;
-    background:#9d4edd;
-    color:white;
-    padding:12px;
-    border-radius:12px;
-    text-align:center;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.links a:hover{
-    background:#7b2cbf;
-}
-
-footer{
-    text-align:center;
-    margin-top:50px;
-    font-size:16px;
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #4b296b;
+    font-size: 14px;
 }
 
 </style>
+""", unsafe_allow_html=True)
 
-</head>
+# TITULO
+st.markdown("""
+<div class='titulo'>
+✨ Portafolio Multimodal ✨
+</div>
+""", unsafe_allow_html=True)
 
-<body>
-
-<h1>✨ Portafolio Multimodal ✨</h1>
-
-<p class="subtitle">
+st.markdown("""
+<div class='subtitulo'>
 Sobrevivimos a Streamlit, OCR, NLP y crisis emocionales con GitHub.
-</p>
-
-<div class="container">
-
-<!-- CLASE 6 -->
-<div class="card">
-
-<h2>📚 Clase 6</h2>
-
-<p>
-Primer contacto con Streamlit.
-Mucho café y errores existenciales.
-</p>
-
-<div class="links">
-
-<a href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/" target="_blank">
-🚀 Introducción
-</a>
-
-<a href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/" target="_blank">
-🔊 Texto a Audio
-</a>
-
 </div>
-</div>
+""", unsafe_allow_html=True)
 
-<!-- CLASE 7 -->
-<div class="card">
+# COLUMNAS
+col1, col2, col3, col4 = st.columns(4)
 
-<h2>🌎 Clase 7</h2>
+# CLASE 6
+with col1:
+    st.markdown("""
+    <div class='card'>
+        <div class='card-title'>📚 Clase 6</div>
+        <div class='card-text'>
+        Primer contacto con Streamlit. Mucho café y errores existenciales.
+        </div>
 
-<p>
-OCR, traducción y magia tecnológica sospechosamente poderosa.
-</p>
+        <a class='link-btn' href='https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/' target='_blank'>
+        🚀 Introducción
+        </a>
 
-<div class="links">
+        <a class='link-btn' href='https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/' target='_blank'>
+        🔊 Texto a Audio
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
 
-<a href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/" target="_blank">
-🌐 Traductor
-</a>
+# CLASE 7
+with col2:
+    st.markdown("""
+    <div class='card'>
+        <div class='card-title'>🌎 Clase 7</div>
+        <div class='card-text'>
+        OCR, traducción y magia tecnológica sospechosamente poderosa.
+        </div>
 
-<a href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/" target="_blank">
-🎧 OCR + Audio
-</a>
+        <a class='link-btn' href='https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/' target='_blank'>
+        🌐 Traductor
+        </a>
 
-<a href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/" target="_blank">
-📸 VisionScan OCR
-</a>
+        <a class='link-btn' href='https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/' target='_blank'>
+        🎧 OCR + Audio
+        </a>
 
-</div>
-</div>
+        <a class='link-btn' href='https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/' target='_blank'>
+        📸 VisionScan OCR
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
 
-<!-- CLASE 8 -->
-<div class="card">
+# CLASE 8
+with col3:
+    st.markdown("""
+    <div class='card'>
+        <div class='card-title'>🧠 Clase 8</div>
+        <div class='card-text'>
+        NLP, sentimientos y análisis emocional. TextBlob leyendo traumas desde temprano.
+        </div>
 
-<h2>🧠 Clase 8</h2>
+        <a class='link-btn' href='https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/' target='_blank'>
+        ☁️ WordCloud
+        </a>
 
-<p>
-NLP, sentimientos y análisis emocional.
-TextBlob leyendo traumas desde temprano.
-</p>
+        <a class='link-btn' href='https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/' target='_blank'>
+        📊 TF-IDF
+        </a>
 
-<div class="links">
+        <a class='link-btn' href='https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/' target='_blank'>
+        💜 Sentimenta
+        </a>
 
-<a href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/" target="_blank">
-☁️ WordCloud
-</a>
+        <a class='link-btn' href='https://dpaudyyodkunjmeg6rpcex.streamlit.app/' target='_blank'>
+        🤖 NLP Dashboard
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
 
-<a href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/" target="_blank">
-📊 TF-IDF
-</a>
+# CLASE 9
+with col4:
+    st.markdown("""
+    <div class='card'>
+        <div class='card-title'>🎯 Clase 9</div>
+        <div class='card-text'>
+        Computer Vision entrando como protagonista del semestre.
+        </div>
 
-<a href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/" target="_blank">
-💜 Sentimenta
-</a>
+        <a class='link-btn' href='https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/' target='_blank'>
+        👁️ YOLOv5
+        </a>
 
-<a href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/" target="_blank">
-🤖 NLP Dashboard
-</a>
+        <a class='link-btn' href='https://yrhoftz8g3zqnca6elyu22.streamlit.app/' target='_blank'>
+        📦 Object Detection
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
 
-</div>
-</div>
-
-<!-- CLASE 9 -->
-<div class="card">
-
-<h2>👁️ Clase 9</h2>
-
-<p>
-Visión por computador porque sufrir con Python no era suficiente.
-</p>
-
-<div class="links">
-
-<a href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/" target="_blank">
-🎯 YOLOv5 Detector
-</a>
-
-<a href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/" target="_blank">
-🧿 Computer Vision App
-</a>
-
-</div>
-</div>
-
-</div>
-
-<footer>
+# FOOTER
+st.markdown("""
+<div class='footer'>
 ✨ Desarrollado por Ale • Interfaces Multimodales • Streamlit Survivor ✨
-</footer>
-
-</body>
-</html>
-"""
-
-st.components.v1.html(
-    portfolio_html,
-    height=2200,
-    scrolling=True
-)
+</div>
+""", unsafe_allow_html=True)
