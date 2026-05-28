@@ -6,17 +6,12 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS
+# ---------------- CSS ----------------
 st.markdown("""
 <style>
 
 .stApp {
     background: linear-gradient(135deg, #f3d9ff, #d0ebff);
-}
-
-.main {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
 }
 
 .block-container {
@@ -59,6 +54,7 @@ st.markdown("""
     font-size: 17px;
     color: #311b5b;
     margin-bottom: 25px;
+    line-height: 1.7;
 }
 
 .link-btn {
@@ -91,116 +87,140 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# TITULO
+# ---------------- TITULO ----------------
 st.markdown("""
-<div class='titulo'>
-✨ Portafolio Multimodal ✨
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<div class='subtitulo'>
+<h1 class="titulo">✨ Portafolio Multimodal ✨</h1>
+<p class="subtitulo">
 Sobrevivimos a Streamlit, OCR, NLP y crisis emocionales con GitHub.
-</div>
+</p>
 """, unsafe_allow_html=True)
 
+# ---------------- COLUMNAS ----------------
 col1, col2, col3, col4 = st.columns(4)
 
-# CLASE 6
+# ---------------- CLASE 6 ----------------
 with col1:
     st.markdown("""
-    <div class='card'>
-        <div class='card-title'>📚 Clase 6</div>
-        <div class='card-text'>
-        Primer contacto con Streamlit. Mucho café y errores existenciales.
+    <div class="card">
+        <div class="card-title">📚 Clase 6</div>
+
+        <div class="card-text">
+        Primer contacto con Streamlit.<br>
+        Mucho café y errores existenciales.
         </div>
 
-        <a class="link-btn" href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/"
+        target="_blank">
         🚀 Introducción
         </a>
 
-        <a class="link-btn" href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/"
+        target="_blank">
         🔊 Texto a Audio
         </a>
 
     </div>
     """, unsafe_allow_html=True)
 
-# CLASE 7
+# ---------------- CLASE 7 ----------------
 with col2:
     st.markdown("""
-    <div class='card'>
-        <div class='card-title'>🌎 Clase 7</div>
-        <div class='card-text'>
+    <div class="card">
+        <div class="card-title">🌎 Clase 7</div>
+
+        <div class="card-text">
         OCR, traducción y magia tecnológica sospechosamente poderosa.
         </div>
 
-        <a class="link-btn" href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/"
+        target="_blank">
         🌐 Traductor
         </a>
 
-        <a class="link-btn" href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/"
+        target="_blank">
         🎧 OCR + Audio
         </a>
 
-        <a class="link-btn" href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/"
+        target="_blank">
         📸 VisionScan OCR
         </a>
 
     </div>
     """, unsafe_allow_html=True)
 
-# CLASE 8
+# ---------------- CLASE 8 ----------------
 with col3:
     st.markdown("""
-    <div class='card'>
-        <div class='card-title'>🧠 Clase 8</div>
-        <div class='card-text'>
-        NLP, sentimientos y análisis emocional. TextBlob leyendo traumas desde temprano.
+    <div class="card">
+        <div class="card-title">🧠 Clase 8</div>
+
+        <div class="card-text">
+        NLP, sentimientos y análisis emocional.
+        TextBlob leyendo traumas desde temprano.
         </div>
 
-        <a class="link-btn" href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/"
+        target="_blank">
         ☁️ WordCloud
         </a>
 
-        <a class="link-btn" href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/"
+        target="_blank">
         📊 TF-IDF
         </a>
 
-        <a class="link-btn" href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/"
+        target="_blank">
         💜 Sentimenta
         </a>
 
-        <a class="link-btn" href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/"
+        target="_blank">
         🤖 NLP Dashboard
         </a>
 
     </div>
     """, unsafe_allow_html=True)
 
-# CLASE 9
+# ---------------- CLASE 9 ----------------
 with col4:
     st.markdown("""
-    <div class='card'>
-        <div class='card-title'>🎯 Clase 9</div>
-        <div class='card-text'>
+    <div class="card">
+        <div class="card-title">🎯 Clase 9</div>
+
+        <div class="card-text">
         Computer Vision entrando como protagonista del semestre.
         </div>
 
-        <a class="link-btn" href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/"
+        target="_blank">
         👁️ YOLOv5
         </a>
 
-        <a class="link-btn" href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/" target="_blank">
+        <a class="link-btn"
+        href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/"
+        target="_blank">
         📦 Object Detection
         </a>
 
     </div>
     """, unsafe_allow_html=True)
 
-# FOOTER
+# ---------------- FOOTER ----------------
 st.markdown("""
-<div class='footer'>
+<div class="footer">
 ✨ Desarrollado por Ale • Interfaces Multimodales • Streamlit Survivor ✨
 </div>
 """, unsafe_allow_html=True)
