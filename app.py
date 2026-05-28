@@ -1,26 +1,10 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Portafolio 1",
+    page_title="Portafolio Interfaces Multimodales",
     page_icon="✨",
     layout="wide"
 )
-
-st.markdown("""
-<style>
-
-.main {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-}
-
-.block-container {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 portfolio_html = """
 <!DOCTYPE html>
@@ -118,7 +102,7 @@ footer{
 
 <body>
 
-<h1>✨ Portafolio 1 ✨</h1>
+<h1>✨ Portafolio Interfaces Multimodales ✨</h1>
 
 <p class="subtitle">
 Sobreviví a Streamlit y crisis emocionales con GitHub.
@@ -222,6 +206,6 @@ Sobreviví a Streamlit y crisis emocionales con GitHub.
 
 st.components.v1.html(
     portfolio_html,
-    height=2200,
+    height=750,
     scrolling=True
 )
