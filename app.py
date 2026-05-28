@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Portafolio Interfaces Multimodales",
+    page_title="Portafolio 1",
     page_icon="✨",
     layout="wide"
 )
@@ -102,7 +102,7 @@ footer{
 
 <body>
 
-<h1>✨ Portafolio Interfaces Multimodales ✨</h1>
+<h1>✨ Portafolio 1 ✨</h1>
 
 <p class="subtitle">
 Sobreviví a Streamlit y crisis emocionales con GitHub.
