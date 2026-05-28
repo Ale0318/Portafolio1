@@ -1,219 +1,229 @@
+import streamlit as st
+
+st.set_page_config(
+    page_title="Portafolio Multimodal",
+    page_icon="✨",
+    layout="wide"
+)
+
+portfolio_html = """
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portafolio Interfaces Multimodales</title>
 
-  <style>
+<meta charset="UTF-8">
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
 
-    body{
-      background: linear-gradient(135deg,#f8e8ff,#e0c3fc,#c2e9fb);
-      min-height:100vh;
-      padding:40px;
-      color:#2d1b4e;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-    h1{
-      text-align:center;
-      font-size:3rem;
-      margin-bottom:10px;
-    }
+body{
+    background: linear-gradient(135deg,#f8e8ff,#e0c3fc,#c2e9fb);
+    padding:40px;
+    color:#2d1b4e;
+}
 
-    .subtitle{
-      text-align:center;
-      margin-bottom:40px;
-      font-size:1.1rem;
-    }
+h1{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:10px;
+}
 
-    .container{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:25px;
-    }
+.subtitle{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:40px;
+}
 
-    .card{
-      background:rgba(255,255,255,0.75);
-      backdrop-filter:blur(12px);
-      border-radius:25px;
-      padding:25px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.1);
-      transition:0.3s;
-    }
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
 
-    .card:hover{
-      transform:translateY(-5px) scale(1.01);
-    }
+.card{
+    background:rgba(255,255,255,0.75);
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
 
-    .card h2{
-      margin-bottom:15px;
-      color:#6a00f4;
-    }
+.card:hover{
+    transform:translateY(-5px);
+}
 
-    .card p{
-      margin-bottom:20px;
-      color:#4b3f72;
-    }
+.card h2{
+    color:#6a00f4;
+    margin-bottom:15px;
+}
 
-    .links{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
+.card p{
+    margin-bottom:20px;
+    line-height:1.5;
+}
 
-    .links a{
-      text-decoration:none;
-      background:#9d4edd;
-      color:white;
-      padding:12px;
-      border-radius:12px;
-      text-align:center;
-      transition:0.3s;
-      font-weight:600;
-    }
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
 
-    .links a:hover{
-      background:#7b2cbf;
-    }
+.links a{
+    text-decoration:none;
+    background:#9d4edd;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:bold;
+    transition:0.3s;
+}
 
-    footer{
-      text-align:center;
-      margin-top:50px;
-      color:#5a4a75;
-      font-size:0.95rem;
-    }
+.links a:hover{
+    background:#7b2cbf;
+}
 
-  </style>
+footer{
+    text-align:center;
+    margin-top:50px;
+    font-size:16px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <h1>✨ Portafolio Multimodal ✨</h1>
+<h1>✨ Portafolio Multimodal ✨</h1>
 
-  <p class="subtitle">
-    Sobrevivimos a Streamlit, OCR, NLP, MediaPipe y crisis emocionales con GitHub.
-  </p>
+<p class="subtitle">
+Sobrevivimos a Streamlit, OCR, NLP y crisis emocionales con GitHub.
+</p>
 
-  <div class="container">
+<div class="container">
 
-    <!-- CLASE 6 -->
-    <div class="card">
+<!-- CLASE 6 -->
+<div class="card">
 
-      <h2>📚 Clase 6</h2>
+<h2>📚 Clase 6</h2>
 
-      <p>
-        Primer contacto con Streamlit. 
-        Hubo café, errores y probablemente lágrimas.
-      </p>
+<p>
+Primer contacto con Streamlit.
+Mucho café y errores existenciales.
+</p>
 
-      <div class="links">
+<div class="links">
 
-        <a href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/" target="_blank">
-          🚀 Introducción
-        </a>
+<a href="https://introo-zfwazup7wrvjuqbqbmczfl.streamlit.app/" target="_blank">
+🚀 Introducción
+</a>
 
-        <a href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/" target="_blank">
-          🔊 Texto a Audio
-        </a>
+<a href="https://texto-a-audio-ale-ppvwbaurnr3mep2zh8anqn.streamlit.app/" target="_blank">
+🔊 Texto a Audio
+</a>
 
-      </div>
+</div>
+</div>
 
-    </div>
+<!-- CLASE 7 -->
+<div class="card">
 
-    <!-- CLASE 7 -->
-    <div class="card">
+<h2>🌎 Clase 7</h2>
 
-      <h2>🌎 Clase 7</h2>
+<p>
+OCR, traducción y magia tecnológica sospechosamente poderosa.
+</p>
 
-      <p>
-        OCR, traducción y magia tecnológica digna de película sci-fi low budget.
-      </p>
+<div class="links">
 
-      <div class="links">
+<a href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/" target="_blank">
+🌐 Traductor
+</a>
 
-        <a href="https://traductoor-q4rqcerg82tfgk2ghmahpu.streamlit.app/" target="_blank">
-          🌐 Traductor
-        </a>
+<a href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/" target="_blank">
+🎧 OCR + Audio
+</a>
 
-        <a href="https://ocr-audio-avfn8jneonbdegm2mvipto.streamlit.app/" target="_blank">
-          🎧 OCR + Audio
-        </a>
+<a href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/" target="_blank">
+📸 VisionScan OCR
+</a>
 
-        <a href="https://jwrh4nyycm8pwyqjl3pddg.streamlit.app/" target="_blank">
-          📸 VisionScan OCR
-        </a>
+</div>
+</div>
 
-      </div>
+<!-- CLASE 8 -->
+<div class="card">
 
-    </div>
+<h2>🧠 Clase 8</h2>
 
-    <!-- CLASE 8 -->
-    <div class="card">
+<p>
+NLP, sentimientos y análisis emocional.
+TextBlob leyendo traumas desde temprano.
+</p>
 
-      <h2>🧠 Clase 8</h2>
+<div class="links">
 
-      <p>
-        NLP, sentimientos y análisis emocional.
-        TextBlob leyendo traumas desde 2025.
-      </p>
+<a href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/" target="_blank">
+☁️ WordCloud
+</a>
 
-      <div class="links">
+<a href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/" target="_blank">
+📊 TF-IDF
+</a>
 
-        <a href="https://wordcloud-ale-79ksrpzluvjdajhoveyqqm.streamlit.app/" target="_blank">
-          ☁️ WordCloud
-        </a>
+<a href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/" target="_blank">
+💜 Sentimenta
+</a>
 
-        <a href="https://tfidf-demo-espanol-thhzrhhzhrvpx7fhyq5zcm.streamlit.app/" target="_blank">
-          📊 TF-IDF
-        </a>
+<a href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/" target="_blank">
+🤖 NLP Dashboard
+</a>
 
-        <a href="https://sentimenta-fw2zmndnyesdczxhsvygze.streamlit.app/" target="_blank">
-          💜 Sentimenta
-        </a>
+</div>
+</div>
 
-        <a href="https://dpaudyyodkunjmeg6rpcex.streamlit.app/" target="_blank">
-          🤖 NLP Dashboard
-        </a>
+<!-- CLASE 9 -->
+<div class="card">
 
-      </div>
+<h2>👁️ Clase 9</h2>
 
-    </div>
+<p>
+Visión por computador porque sufrir con Python no era suficiente.
+</p>
 
-    <!-- CLASE 9 -->
-    <div class="card">
+<div class="links">
 
-      <h2>👁️ Clase 9</h2>
+<a href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/" target="_blank">
+🎯 YOLOv5 Detector
+</a>
 
-      <p>
-        Visión por computador porque claramente sufrir con Python no era suficiente.
-      </p>
+<a href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/" target="_blank">
+🧿 Computer Vision App
+</a>
 
-      <div class="links">
+</div>
+</div>
 
-        <a href="https://yolov5-8hzpgrleyaixfoygjfwxvz.streamlit.app/" target="_blank">
-          🎯 YOLOv5 Detector
-        </a>
+</div>
 
-        <a href="https://yrhoftz8g3zqnca6elyu22.streamlit.app/" target="_blank">
-          🧿 Computer Vision App
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <footer>
-    ✨ Desarrollado por Ale • Interfaces Multimodales • Streamlit Survivor ✨
-  </footer>
+<footer>
+✨ Desarrollado por Ale • Interfaces Multimodales • Streamlit Survivor ✨
+</footer>
 
 </body>
 </html>
+"""
+
+st.components.v1.html(
+    portfolio_html,
+    height=2200,
+    scrolling=True
+)
