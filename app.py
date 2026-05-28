@@ -206,6 +206,6 @@ Sobreviví a Streamlit y crisis emocionales con GitHub.
 
 st.components.v1.html(
     portfolio_html,
-    height=1000,
+    height=900,
     scrolling=True
 )
